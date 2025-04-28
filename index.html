@@ -37,11 +37,17 @@
             font-size: 1.2rem;
             color: #6c757d;
         }
-        nav {
-            margin-bottom: 20px;
+        .link-section {
+            background-color: #ffffff;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 60%;
         }
-        nav div {
+        .link-section nav div {
             display: flex;
+            justify-content: center;
             gap: 40px;
         }
         nav a {
@@ -58,17 +64,19 @@
     </style>
 </head>
 <body>
-<header>
-    <h1>Results Page of A2B</h1>
-    <p>Ambisonic to Binaural Rendering using Neural Network</p>
-</header>
-<nav>
-    <div>
+    <header>
+        <h1>Results Page of A2B</h1>
+        <p>Ambisonic to Binaural Rendering using Neural Network</p>
+    </header>
+    <section class="link-section">
+        <nav>
+            <div>
         <a href="urbansounds.html" target="_blank">Urbansounds</a>
         <a href="bytedanace.html" target="_blank">ByteDance</a>
         <a href="10-A2B-R1" target="_blank">10-A2B-R1</a>
         <a href="10-A2B-R2" target="_blank">10-A2B-R2</a>
     </div>
 </nav>
+</section>
 </body>
 </html>

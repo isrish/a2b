@@ -61,6 +61,16 @@
             color: #0056b3;
             text-decoration: underline;
         }
+        iframe {
+            width: 80%;
+            height: 1600px;
+            margin-top: 20px;
+            border: none;
+            border-radius: 0;
+            box-shadow: none;
+            background: transparent;
+            overflow: hidden;
+        }
     </style>
 </head>
 <body>
@@ -68,6 +78,26 @@
         <h1>Results Page of A2B</h1>
         <p>Ambisonic to Binaural Rendering using Neural Network</p>
     </header>
+    <section class="link-section">
+        <nav>
+            <div>
+                <a onclick="loadPage('urbansounds.html')">Urbansounds</a>
+                <a onclick="loadPage('bytedanace.html')">ByteDance</a>
+                <a href="10-A2B-R1" target="_blank">10-A2B-R1</a>
+                <a href="10-A2B-R2" target="_blank">10-A2B-R2</a>
+            </div>
+        </nav>
+    </section>
+    <iframe id="content-frame" src=""></iframe>
+
+    <script>
+        function loadPage(url) {
+            document.getElementById('content-frame').src = url;
+        }
+    </script>
+</body>
+</html>
+    <!-- </header>
     <section class="link-section">
         <nav>
             <div>
@@ -79,4 +109,4 @@
 </nav>
 </section>
 </body>
-</html>
+</html> -->
